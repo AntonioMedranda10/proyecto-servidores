@@ -14,4 +14,3 @@ class CaracteristicaEspacio(Base):
     actualizado_en = Column(TIMESTAMP, server_default=func.current_timestamp(), onupdate=func.current_timestamp())
     
     espacio = relationship("Espacio", back_populates="caracteristicas")
-
